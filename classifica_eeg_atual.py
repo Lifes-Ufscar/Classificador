@@ -5,7 +5,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.svm import SVC
 import pickle
 
-dfeeg = pd.read_excel('Amostras//amostra_ID1_VD2_UI4.xlsx', sheet_name = 'Sheet1')
+dfeeg = pd.read_excel('Amostras//amostra_test02_02-06-20_1_1.xlsx', sheet_name = 'Sheet1')
 
 #####midGamma
 lda_midGamma = pickle.load(open('lda_eeg//lda_midGamma.sav', 'rb'))
@@ -192,8 +192,8 @@ while aa <= tamanhoamostra:
     
     print("predict", predict)
     
-    i= i+200
-    aa = aa+200
+    i= i+100
+    aa = aa+100
     total = 0
     
 print("\nTESTE EEG FIM\n")
